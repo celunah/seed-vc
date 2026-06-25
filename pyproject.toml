@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "seed-vc"
 version = "0.4.3"
-description = "Seed-VC packaged fork"
+description = "Seed-VC packaged fork with relaxed dependencies"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "GPL-3.0" }
@@ -47,32 +47,19 @@ dependencies = [
     "transformers",
 ]
 
-[tool.setuptools]
-py-modules = [
-    "app",
-    "app_svc",
-    "app_vc",
-    "app_vc_v2",
-    "eval",
-    "hf_utils",
-    "inference",
-    "inference_v2",
-    "optimizers",
-    "real-time-gui",
-    "seed_vc_wrapper",
-    "train",
-    "train_v2",
-]
-
 [tool.setuptools.packages.find]
 where = ["."]
 include = [
-    "modules*",
-    "baselines*",
+    "seed_vc*",
+    "audiocodec*",
+    "audiotools*",
 ]
-exclude = [
-    "assets*",
-    "configs*",
-    "data*",
-    "examples*",
+
+[tool.setuptools.package-data]
+seed_vc = [
+    "**/*.yaml",
+    "**/*.yml",
+    "**/*.json",
+    "**/*.bin",
+    "**/*.txt",
 ]
