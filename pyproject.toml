@@ -63,3 +63,20 @@ seed_vc = [
     "**/*.bin",
     "**/*.txt",
 ]
+
+audiotools = [
+    "**/*.html",
+    "**/*.css",
+    "**/*.js",
+    "**/*.json",
+    "**/*.yaml",
+    "**/*.yml",
+    "**/*.txt",
+]
+
+audiocodec = [
+    "**/*.json",
+    "**/*.yaml",
+    "**/*.yml",
+    "**/*.txt",
+]
