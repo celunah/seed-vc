@@ -1,4 +1,9 @@
-# Seed-VC  
+# Seed-VC maintenance fork
+This is a maintenance fork of SeedVC focused on packaging, dependency compatibility, and keeping the library usable in modern Python ML environments. It preserves the packaged `seed_vc` import layout and does not change the model architecture.
+
+The original model details are listed below.
+
+## Seed-VC  
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Demo-blue)](https://huggingface.co/spaces/Plachta/Seed-VC)  [![arXiv](https://img.shields.io/badge/arXiv-2411.09943-<COLOR>.svg)](https://arxiv.org/abs/2411.09943)
 
 *English | [简体中文](README-ZH.md) | [日本語](README-JA.md)*  
